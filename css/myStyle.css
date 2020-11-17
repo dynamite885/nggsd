@@ -1,7 +1,10 @@
 .body {
-  align-content: center;
+  align-items: center;
 }
-.body .h1 {
+.body h1 {
+  width: auto;
+  height: min-content;
+  text-align: center;
   text-emphasis-color: #ffffff;
   text-shadow: 5px 5px 10px #333333;
   padding: 50dp #cfbeff;
