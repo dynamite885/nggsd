@@ -1,6 +1,6 @@
 body {
   align-content: center;
-  align-items: center;
+  justify-content: center;
 }
 body h1 {
   width: auto;
