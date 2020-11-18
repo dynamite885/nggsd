@@ -1,6 +1,5 @@
 body {
-  display: flex;
-  justify-content: center;
+  vertical-align: middle;
 }
 body h1 {
   width: auto;
