@@ -7,3 +7,30 @@ body h1 {
   padding: 50dp #cfbeff;
   border-top: 25px #505050;
 }
+
+header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 5px 5px 10px #333333;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
