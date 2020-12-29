@@ -6,7 +6,7 @@
     </head>
     <body>
         <header>
-            <h1>나 가 고 싶 다</h1>
+            <h1>NA GA GO SIP DA</h1>
         </header>
         <nav>
             <a href="#">A</a>
@@ -15,11 +15,15 @@
             <a href="#">D</a>
         </nav>
         <h1>My Web Test Space</h1>
-        <p>안녕</p>
-        <p>こんにちは</p>
-        <p>Hello</p>
+        <p id="kr">안녕</p>
+        <p id="jp">こんにちは</p>
+        <p id="eng">Hello</p>
         <img src="src/Rectangle1.png" alt="Rectangle1"></img>
         <button name="button">페이지 이동</button>
         <a href="html/subPage.html">페이지 이동</a>
+        <script>
+            var a = document.querySelector('#jp').innerHTML
+            console.log(a)
+        </script>
     </body>
 </html>
