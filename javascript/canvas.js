@@ -22,9 +22,16 @@ class mino{
     }
 }
 
-var nowmino = new mino(O);
-nowmino.drawMino()
 
+function keyDown() {
+    alert(Event.keyCode)
+}
+var asdf = true
+
+// var nowmino = new mino(O);
+// nowmino.drawMino();
+
+document.onkeydown = keyDown();
 
 // ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
 // ctx.fillRect (0, 0, 800, 800);
