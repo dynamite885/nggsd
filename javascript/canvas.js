@@ -13,6 +13,7 @@ const S = [[0, 1], [1, 0], [1, 1], [2, 0], [6, 0], [3, 19]];
 const Z = [[0, 0], [1, 0], [1, 1], [2, 1], [7, 0], [3, 19]];
 const X = [[0, 1], [1, 0], [1, 2], [2, 1], [8, 0], [3, 19]];
 const matrix = Array.from(Array(40), () => Array(10).fill(0));
+const RotMat = [[[1, 0], [0, 1]], [[0, -1], [1, 0]], [[-1, 0], [0, -1]], [[0, 1], [-1, 0]]]
 
 class mino{
     constructor(m){
@@ -31,6 +32,11 @@ class mino{
     moveMino(toX, toY) {
         this.m[5][0] += toX;
         this.m[5][1] += toY;
+    }
+    rotateMino(d) {
+        d = (d+4)%4
+        for(let i=0; i<this.m.length-2; i++) {
+        }
     }
 }
 
