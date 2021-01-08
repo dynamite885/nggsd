@@ -35,7 +35,11 @@ class mino{
     }
     rotateMino(d) {
         d = (d+4)%4
+        let temp = (this.m).slice(0);
+        console.log(this.m === temp);
         for(let i=0; i<this.m.length-2; i++) {
+            this.m[i][0] = 2-temp[i][1]
+            this.m[i][1] = temp[i][0]
         }
     }
 }
@@ -57,7 +61,7 @@ class field{
 
 
 
-var nowmino = new mino(X);
+var nowmino = new mino(L);
 var newField = new field(matrix);
 nowmino.drawMino(newField.f);
 newField.drawField()
@@ -71,7 +75,7 @@ function keyDown() {
         nowmino.moveMino(1, 0);
     }
     else if(event.keyCode == 38) {
-        nowmino.moveMino(0, -1);
+        nowmino.rotateMino(1);
     }
     else if(event.keyCode == 40) {
         nowmino.moveMino(0, 1);
