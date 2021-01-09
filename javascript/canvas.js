@@ -35,11 +35,12 @@ class mino{
     }
     rotateMino(d) {
         d = (d+4)%4
-        let temp = (this.m).slice(0);
         console.log(this.m === temp);
         for(let i=0; i<this.m.length-2; i++) {
-            this.m[i][0] = 2-temp[i][1]
-            this.m[i][1] = temp[i][0]
+            let tempX = this.m[i][0]
+            let tempY = this.m[i][1]
+            this.m[i][0] = 2-tempY
+            this.m[i][1] = tempX
         }
     }
 }
@@ -59,9 +60,7 @@ class field{
     }
 }
 
-
-
-var nowmino = new mino(L);
+var nowmino = new mino(X);
 var newField = new field(matrix);
 nowmino.drawMino(newField.f);
 newField.drawField()
